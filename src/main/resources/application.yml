@@ -1,0 +1,4 @@
+# .yml server configuration file
+---
+server:
+  port: 8010
