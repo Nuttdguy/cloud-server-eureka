@@ -1,4 +1,17 @@
 # .yml server configuration file
+# configure profile for single server instance
 ---
 server:
-  port: 8010
+  port: 8761
+spring:
+  profiles: default
+eureka:
+  instance:
+    hostname: eurekahost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+      

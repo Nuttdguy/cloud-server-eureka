@@ -1,3 +1,5 @@
-# .yml bootstrap file
-
-spring.application.name = cloud-server-eureka
+# provide name of application - required before loading application.yml
+---
+spring:
+  application:
+    name: eureka
